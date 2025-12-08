@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+     scroll-behavior: smooth;
+     transition: .5s;
+     font-family: "Playwrite NO", cursive;
+}
+*::selection{
+    background-color: #ffaa17;
+    color: #fff;
+}
+
+.contanier{
+    width: 85%;
+    margin: auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   background-color: #1c1e22;
+    z-index: 1000;
+
+}
+header.active{
+    background-color: #1c1e22;
+    border-bottom: 1px solid #8888884a;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+header nav .nav-links a{
+    color: #fff;
+    margin-left: 50px;
+}
+header nav .nav-links a:hover,header nav .nav-links a.active{
+    color: #ffaa17;
+}
+
+#btn-menu{
+    display: none;
+}
+
+
+.hero{
+    padding-top: 80px;
+    background: url(img/hero-bg.png);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .contanier{
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+}
+.hero .contanier .content .p{
+display: flex;
+flex-direction: column; 
+/* width: 15vw; */
+
+
+}
+.hero .contanier .content .p i{
+ margin-bottom: 10px;
+ color: #ffaa17;
+font-size: 30px;
+width: 3vw;
+ cursor: pointer;
+ 
+
+}
+.hero .contanier .content .p i:hover{
+    color: #ffffff;
+
+}
+
+.content-h1::before{
+    animation-name: typing;
+        content: '';
+            color: #ffaa17;
+
+           font-size: 40px;
+            
+           
+             animation-duration: 5s;
+          animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    
+
+
+}
+ @keyframes typing{
+    0%{
+        content: "We|";
+    }
+    15%{
+        content: "Welc|";
+    }
+    30%{
+        content: "Welcome t|";
+    }
+    45%{
+        content: "Welcome to Za|";
+    }
+    60%{
+        content: "Welcome to Zayed's|";
+    }
+    75%{
+        content: "Welcome to Zayed's Web|";
+    }
+    90%{
+        content: "Welcome to Zayed's Websi|";
+    }
+
+    100%{
+        content: "Welcome to Zayed's Website!";
+    }
+    
+ }
+.hero .content p{
+    color: #e4e4e4;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+
+}
+.hero .content .btn{
+    font-size: 18px;
+}
+.btn{
+    padding: 15px 30px;
+    color: #1c1e22;
+    font-weight: 500;
+    background-color: #ffaa17;
+    border-radius: 10px;
+    border: 1px solid #ffaa17;
+    width: 13vw;
+}
+.btn:hover {
+    color: #ffaa17;
+    background: #fff;
+}
+ .about {
+    padding: 90px 0 50px;
+    
+    
+ }
+.about .contanier{
+    display: flex;
+    justify-content: center;
+}
+
+
+.about .content{
+    margin-left: 30px;
+    
+}
+.about .content h1{
+    color: #1c1e22;
+    font-size: 45px;
+}
+.about .content h1 span{
+    color: #ffaa17;
+}
+.about .content h3{
+    color: #1c1e22;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.about .content p{
+    color: #444;
+    line-height: 1.8;
+    margin-bottom:70px;
+}
+
+section{
+    padding: 90px 0 40px;
+}
+
+.sec-top{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.sec-top h1{
+    color: #1c1e22;
+    font-size: 40px;
+}
+.sec-top h1 span{
+    color: #ffaa17;
+}
+
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxs .box{
+    width: 30%;
+}
+
+.services{
+    background-color: #f0f4f9;
+    text-align: center;
+}
+.services .boxs .box{
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgba(128, 112, 22, 0.2);
+    position: relative;
+    top: 0;
+}
+.services .boxs .box:hover{
+    top: -25px;
+   
+    transition: 1s;
+   
+}
+
+.services .boxs .box i{
+    color: #ffaa17;
+    
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services .boxs .box h3{
+    color: #1c1e22;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services .boxs .box p{
+    color: #444;
+    margin-bottom: 50px;
+}
+
+.portfolio .boxs .box{
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .boxs .box img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio .boxs .box:hover img{
+    transform: scale(1.2) rotate(-4deg);
+    
+    transition: 0.6s ease-out;
+}
+.portfolio .boxs .box .box-hover{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111b9;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    opacity: 0;
+}
+.portfolio .boxs .box:hover .box-hover{
+    opacity: 1;
+}
+.portfolio .boxs .box .box-hover span{
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact{
+    background: #f0f4f9;
+}
+.contact form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact form input{
+    width: 48%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.contact form textarea{
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.contact form textarea:focus,.contact form input:focus{
+    border-color: #ffaa17;
+}
+.contact form button{
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+#btn-menu{
+display: block;
+}
+header nav .nav-links{
+    display: none;
+}
+.hero .contanier .content .p i{
+ margin-bottom: 10px;
+ color: #ffaa17;
+font-size: 20px;
+width: 3vw;
+ cursor: pointer;
+}
+.btn{
+    
+  
+    width: 20vw; 
+   
+}
+    
+    section {
+        padding: 60px 0;
+    }
+
+    .sec-top h1 {
+        font-size: 32px;
+    }
+
+   
+    .about .contanier {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .content {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+   
+    .boxs .box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+   
+    .portfolio .boxs .box {
+        width: 48%;
+    }
+
+   
+    .contact form {
+        width: 100%;
+    }
+
+    .contact form input {
+        width: 100%;
+    }
+}
+
+
+
+
+  
+@media (max-width: 576px) {
+.hero .contanier .content .p i{
+ margin-bottom: 10px;
+ color: #ffaa17;
+font-size: 15px;
+width: 3vw;
+ cursor: pointer;
+}
+.btn{
+    
+  
+    width: 40vw; 
+   
+}
+    .sec-top h1 {
+        font-size: 28px;
+    }
+
+    
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .box {
+        width: 100%;
+    }
+
+    
+    .portfolio .boxs {
+        flex-direction: column;
+    }
+
+    .portfolio .boxs .box {
+        width: 100%;
+    }
+
+   
+    .hero .content p {
+        font-size: 20px;
+    }
+
+    .content-h1::before {
+        font-size: 28px;
+    }
+}
